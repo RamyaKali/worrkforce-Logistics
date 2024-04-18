@@ -1,0 +1,31 @@
+.employee_box {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .employee_box h2 {
+    color: #333;
+  }
+  
+  .employee_box .col {
+    font-weight: bold;
+  }
+  
+  .employee_box input[type="text"],
+  .employee_box input[type="number"],
+  .employee_box input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .employee_box .text-center {
+    margin-top: 30px;
+  }
+  
+  .employee_box .btn-primary {
+    width: 200px;
+  }
+  

@@ -1,0 +1,54 @@
+<p>addemployee works!</p>
+<p>add-employee works!</p>
+<div class="text-center">
+	<button type="button" class="btn btn-success" (click)="redirectToViewEmployee()">View Employees
+	</button>
+	<a [routerLink]="addEmployeedetails" class="btn btn-primary ms-2">Add Employee</a>
+</div>
+<div class="container">
+	<div class="employee_box">
+		<h2 class="text-center mb-5">Add Employee</h2>
+		<div class="row">
+			<div class="col mb-3">Employee Name :</div>
+			<div class="col mb-3">
+				<input type="text" id="empname" name="empname" [(ngModel)]="empname" class="form-control" />
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col mb-3">Mobile Number :</div>
+			<div class="col mb-3">
+				<input type="text" id="mobilenumber" name="mobilenumber" [(ngModel)]="mobilenumber" class="form-control" />
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col mb-3">Location :</div>
+			<div class="col mb-3">
+				<input type="text" id="location" name="location" [(ngModel)]="location" class="form-control" />
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col mb-3">Job Title :</div>
+			<div class="col mb-3">
+				<input type="text" id="jobTitle" name="jobTitle" [(ngModel)]="JobTitle" class="form-control" />
+		</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col mb-3">Salary :</div>
+			<div class="col mb-3">
+				<input type="number" id="salary" name="salary" [(ngModel)]="salary" class="form-control" />
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col mb-3">Date of Joining :</div>
+			<div class="col mb-3">
+				<input type="date" class="form-control" [(ngModel)]="dateofjoining" id="dateofjoining" name="dateofjoining" />
+			</div>
+		</div>
+
+		<div class="text-center mt-5">
+			<button type="button" class="btn btn-primary text-center" (click)="addEmployee()">
+				Add Employee
+			</button>
+		</div>
+	</div>
+</div>

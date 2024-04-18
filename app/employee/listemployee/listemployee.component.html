@@ -1,0 +1,25 @@
+<p>listemployee works!</p>
+<div class="col">
+
+
+<table class="table" style="font-size: 20px">
+    <tr>
+        <th>Id No</th>
+        <th>userName</th>
+        <th>password</th>
+        <th>mobilenumber</th>
+        <th>jobTitle</th>
+        <th>salary</th>
+    </tr>
+    <tr *ngFor="let item of empdata">
+        <td>{{item.id}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.password}}</td>
+        <td>{{item.mobilenumber}}</td>
+        <td>{{item.jobTitle}}</td>
+        <td>{{item.salary}}</td>
+        <td>
+            <button type="button" class="btn btn-danger" (click)="deleteEmpdata(item.id)">Delete</button>
+        </td>
+    </tr>
+</table>
